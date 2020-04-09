@@ -3,7 +3,8 @@ import './App.css';
 import icon from './image/icon.png';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-
+import { ToggleButtonGroup,ToggleButton,Modal,Form,FormControl,Button,FormGroup } from 'react-bootstrap';
+// import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 
 
@@ -56,7 +57,32 @@ class Header extends Component{
           <Button variant="outline-info" className="bsignin" onClick={()=>this.setState({SignInshowModal:true,SignUpshowModal:false})}>
               Sign in
           </Button>
+          <Modal show={this.state.SignInshowModal} onHide={()=>this.setState({SignInshowModal:false})}>
+            <Modal.Header closeButton>
+              <Modal.Body>
+              <Form>
+                    <h4 className="text-center">Sign In</h4>
+                    <Form.Group controlId="userName">
+                        <Form.Label>Username</Form.Label>
+                        <Form.Control type="text"/>
+                    </Form.Group>
 
+                    <Form.Group controlId="password">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password"/>
+                    </Form.Group>
+                    
+                    <FormGroup>
+                        <Button variant="primary" block type="submit">Sign in</Button>
+                        <Form.Text className="text-muted text-center">
+                            Don't have an account? ? Klik Here
+                            {/* <Link to={""}>Here</Link> */}
+                        </Form.Text>
+                    </FormGroup>
+                </Form>
+              </Modal.Body>
+            </Modal.Header>
+          </Modal>
           <div>
             {/* Modal sign up */}
             <Button variant="secondary" className="bsignup" onClick={()=>this.setState({SignInshowModal:false,SignUpshowModal:true})}>
@@ -65,7 +91,10 @@ class Header extends Component{
 
           </div>
       </div>
-
+    // <Switch>
+    //     <Route path="/signin"/>
+    //   </Switch> 
+    // </Router>  
     );
   }
 }
