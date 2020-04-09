@@ -3,6 +3,7 @@ import './App.css';
 import icon from './image/icon.png';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import { ToggleButtonGroup,ToggleButton,Form,FormControl,Button,FormGroup } from 'react-bootstrap';
 
 
 
