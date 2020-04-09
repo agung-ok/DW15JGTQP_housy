@@ -88,7 +88,54 @@ class Header extends Component{
             <Button variant="secondary" className="bsignup" onClick={()=>this.setState({SignInshowModal:false,SignUpshowModal:true})}>
                 Sign up
               </Button>
+              <Modal show={this.state.SignUpshowModal} onHide={()=>this.setState({SignUpshowModal:false})}>
+              <Modal.Header closeButton>
+               <Modal.Body>
+                <Form>
+                      <h4 className="text-center">Sign Up</h4>
+                      <Form.Group controlId="userName">
+                          <Form.Label>Username</Form.Label>
+                          <Form.Control type="text"/>
+                      </Form.Group>
+                      
+                      <Form.Group controlId="email">
+                          <Form.Label>Email</Form.Label>
+                          <Form.Control type="email"/>
+                      </Form.Group>
 
+                      <Form.Group controlId="password">
+                          <Form.Label>Password</Form.Label>
+                          <Form.Control type="password"/>
+                      </Form.Group>
+                      
+                      <Form.Group controlId="listAs">
+                          <Form.Label>List As</Form.Label>
+                          <Form.Control as="select">
+                            <option>List As</option>
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+                          </Form.Control>
+                      </Form.Group> 
+
+                      <Form.Group controlId="gender">
+                          <Form.Label>Jenis Kelamin</Form.Label>
+                          <Form.Control as="select">
+                            <option>Jenis Kelamin</option>
+                            <option value="pria">Pria</option>
+                            <option value="wanita">Wanita</option>
+                          </Form.Control>
+                      </Form.Group> 
+
+                      <Form.Group controlId="address">
+                          <Form.Label>Address</Form.Label>
+                          <Form.Control as="textarea" rows="3"/>
+                      </Form.Group>
+
+                      <Button variant="primary" block type="submit">Sign Up</Button>
+                  </Form>
+                </Modal.Body>
+              </Modal.Header>
+              </Modal>
           </div>
       </div>
     // <Switch>
