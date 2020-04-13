@@ -1,322 +1,255 @@
-/* Home */
-.App {
-  position: relative;
-  width: 1440px;
-  height: 1058px;
-
-  background: #F9F9F9;
-}
-
-
-/* Header */
-.App-header {
-  position: absolute;
-  width: 1440px;
-  height: 120px;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
-}
-
-/* Search */
-.App-search{
-  position: absolute;
-  height: 50px;
-  left: 520px;
-  top: 35px;
-}
-
-.bsignin{
-  position: absolute;
-  left: 1195px;
-  top: 35px;
-  
+.fBudget{
   font-family: Avenir;
   font-style: normal;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height */
-  
-  display: flex;
-  align-items: center;
-  text-align: center;
-  
-}
-/* Button Sign up */
-.bsignup{
-  position: absolute;
-  left: 1289px;
-  top: 35px;
-
-}
-.tsignup{
-  position: absolute;
-  width: 64px;
-  height: 25px;
-  left: 20px;
-  top: 10px;
-
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-/* Filter */
-.App-filter{
-  position: absolute;
-  width: 460px;
-  height: 1058px;
-  left: 0px;
-  top: 60px;
-
-  mix-blend-mode: normal;
-  background: #FFFFFF;
-}
-.buttong{
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  left: 50px;
-  top: 215px;
-}
-
-.rent{
-  position: absolute;
-  width: 144px;
-  height: 33px;
-  left: 50px;
-  top: 160px;
-
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 33px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #000000;
-}
-.dates{
-  position: absolute;
-  left: 50px;
-  top: 355px;
-
-}
-.dates2{
-  position: absolute;
-  width: 375px;
-  height: 50px;
-
-
-  background: rgba(196, 196, 196, 0.25);
-  border-radius: 5px;
-}
-.proper{
-  position: absolute;
-  width: 174px;
-  height: 33px;
-  left: 50px;
-  top: 440px;
-
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 33px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #000000;
-}
-.bproper{
-  position: absolute;
-  width: 55px;
-  height: 40px;
-  left: 50px;
-  top: 512px;
-}
-.room{
-  position: absolute;
-  width: 61px;
-  height: 19px;
-  left: 50px;
-  top: 483px;
-
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 19px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #929292;
-}
-.font{
-  position: absolute;
-  width: 79px;
-  height: 24px;
-  left: 50px;
-  top: 906px;
-
-  font-family: Avenir;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #000000;
-}
-
-.ibudget{
-  position: absolute;
-  width: 237px;
-  height: 50px;
-  left: 183px;
-  top: 894px;
-
-  background: rgba(196, 196, 196, 0.25);
-  border-radius: 5px;
-}
-.bapply{
-  position: absolute;
-  width: 140px;
-  height: 50px;
-  left: 285px;
-  top: 984px;
-
-  background: #5A57AB;
-  border-radius: 5px;
-}
-
-/* Content */
-.App-content{
-  position: absolute;
-  width: 980px;
-  height: 851px;
-  left: 460px;
-  top: 120px;
-}
-.content{
-  position: absolute;
-  width: 290px;
-  height: 240px;
-  left: 0px;
-  top: 0px;
-
-  border: 3px solid rgba(196, 196, 196, 0.25);
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.image{
-  position: absolute;
-  width: 270px;
-  height: 160px;
-  left: 8px;
-  top: 10px;
-}
-.tagscontent{
-  position: absolute;
-  width: 70px;
-  height: 20px;
-  left: 17px;
-  top: 16px;
-
-  background: #FFFFFF;
-  border-radius: 3px;
-}
-.ttagscontent{
-  position: absolute;
-  width: 49px;
-  height: 12px;
-  left: 25px;
-  top: 5px;
-
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 9px;
-  line-height: 12px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #000000;
-}
-
-.tharga{
-  position: absolute;
-  width: 83px;
-  height: 18px;
-  left: 11px;
-  top: 180px;
-
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
   /* identical to box height */
 
   display: flex;
   align-items: center;
   text-align: center;
-
-  color: #000000;
 }
-.tinfo{
-  position: absolute;
-  width: 114px;
-  height: 12px;
-  left: 11px;
-  top: 202px;
-
+.fFacility{
   font-family: Avenir;
   font-style: normal;
   font-weight: 900;
+  font-size: 11px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.fAddress{
+  font-family: Avenir;
+  font-style: normal;
   font-size: 9px;
   line-height: 12px;
   display: flex;
   align-items: center;
   text-align: center;
-
-  color: #000000;
 }
-.talamat{
+.date{
   position: absolute;
-  width: 134px;
-  height: 12px;
-  left: 11px;
-  top: 217px;
-
+  height: 50px;
   font-family: Avenir;
   font-style: normal;
-  font-weight: 900;
-  font-size: 9px;
-  line-height: 12px;
+  font-weight: 800;
+  line-height: 33px;
+  /* identical to box height */
+
   display: flex;
   align-items: center;
   text-align: center;
 
-  color: #A8A8A8;
+  border-radius: 5px;
+}
+.proper{
+  position: absolute;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+.idr{
+  font-family: Avenir;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+}
+.fTipis{
+  font-family: Avenir;
+font-size: 12px;
+align-items: center;
+
+color: #959595;
+}
+.fBooking{
+  font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 49px;
+}
+.fBookingTgl{
+  font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+align-items: center;
+
+color: #878787;
 }
 
+.fUpload{
+  font-family: Avenir;
+font-size: 13px;
+line-height: 15px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #818181;
+
+}
+.fFontLabel{
+  height: 20px;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  display: flex;
+  align-items: center;
+
+  /* Black */
+
+  color: #050505;
+}
+.fFontGroup{
+  height: 16px;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  /* Grey Medium */
+
+  color: #8A8C90;
+}
+
+.fImage{
+  width: 180px;
+  height: 345px;
+
+  background-blend-mode: normal;
+}
+
+.fContentTittle{
+height: 66px;
 
 
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 66px;
+/* identical to box height */
 
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.fContentBudget{
+height: 33px;
+
+
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+
+.fContentAddress{
+width: 290px;
+height: 34px;
+left: 226px;
+top: 856px;
+
+font-family: Avenir;
+font-size: 13px;
+line-height: 15px;
+display: flex;
+align-items: center;
+
+color: #A8A8A8;
+}
+
+.fContentDeskripsi{
+height: 23.68px;
+
+
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+
+.fContentDeskripsiIsi{
+width: 971.03px;
+height: 112.74px;
+
+
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 19px;
+
+color: #A8A8A8;
+
+}
+
+.fContentRoom{
+height: 17px;
+
+
+font-family: Avenir;
+font-size: 13px;
+line-height: 15px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #A8A8A8;
+}
+
+.fContentRoomIsi{
+height: 24px;
+
+
+font-family: Avenir;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
