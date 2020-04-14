@@ -35,19 +35,19 @@ render(){
         <Link to="/content3"></Link>       
         <Link to="/content4"></Link>       
         <Link to="/content5"></Link>       
-        <Link to="/content6"></Link>        
-         <Link to="/profile/user"></Link> 
+        <Link to="/content6"></Link> */}      
+         <Link to="/profile/user"></Link>  
         <Link to="/profile/owner"></Link>             
         <Link to="/booking"></Link>       
         <Link to="/booking/wait"></Link>       
-        <Link to="/history"></Link> */}
+        <Link to="/history"></Link> 
         <Link to="/owner"></Link>       
-        {/* <Link to="/profile/owner"></Link>       
-        <Link to="/add/property"></Link>   */}    
+        <Link to="/profile/owner"></Link>       
+        <Link to="/add/property"></Link>    
         <Switch>
         <Route path="/content1"><Detail1/> 
           </Route> 
-          {/* <Route path="/content2"><Detail2/>
+          <Route path="/content2"><Detail2/>
           </Route>
           <Route path="/content3"><Detail3/>
           </Route>
@@ -58,16 +58,16 @@ render(){
           <Route path="/content6"><Detail6/>
           </Route>  */}
 
-          {/* <Route path="/history/owner"><HistoryOwner/>
+          <Route path="/history/owner"><HistoryOwner/>
           </Route>
 
           <Route path="/profile/owner"><ProfileOwner/>
-          </Route> */}
+          </Route>
 
           <Route path="/owner"><HomeOwner/>
           </Route>
 
-          {/* <Route path="/add/property"><AddProperty/>
+          <Route path="/add/property"><AddProperty/>
           </Route>
 
           <Route path="/profile/user"><ProfileUser/>
@@ -80,7 +80,7 @@ render(){
           </Route>
 
           <Route path="/history/user"><HistoryUser/>
-          </Route> */}
+          </Route>
 
           <Route path="/user"><HomeUser/>
           </Route>
