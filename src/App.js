@@ -9,14 +9,14 @@ import Detail1 from './page/content1';
 // import Detail4 from './content4';
 // import Detail5 from './content5';
 // import Detail6 from './content6';
-// import ProfileUser from './page/profileUser';
-// import Booking from './page/booking'
-// import HistoryUser from './page/historyUser';
-// import HistoryOwner from './page/historyOwner';
+import ProfileUser from './page/profileUser';
+import Booking from './page/booking'
+import HistoryUser from './page/historyUser';
+import HistoryOwner from './page/historyOwner';
 import HomeOwner from './page/homeOwner';
-// import AddProperty from './page/addProperty';
-// import ProfileOwner from './page/profileOwner';
-// import BookingWait from './page/bookingWait';
+import AddProperty from './page/addProperty';
+import ProfileOwner from './page/profileOwner';
+import BookingWait from './page/bookingWait';
 
 
 
@@ -45,7 +45,7 @@ render(){
         <Link to="/profile/owner"></Link>       
         <Link to="/add/property"></Link>    
         <Switch>
-        <Route path="/content1"><Detail1/> 
+        {/* <Route path="/content1"><Detail1/> 
           </Route> 
           <Route path="/content2"><Detail2/>
           </Route>
@@ -55,8 +55,8 @@ render(){
           </Route>
           <Route path="/content5"><Detail5/>
           </Route>
-          <Route path="/content6"><Detail6/>
-          </Route>  */}
+          <Route path="/content6"><Detail6/> */}
+          </Route> 
 
           <Route path="/history/owner"><HistoryOwner/>
           </Route>
