@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from './component/headerHome';
-import Filter from './component/filter';
-import IsiContent from './component/isiContent';
+import Header from '../component/headerHome';
+import Filter from '../component/filter';
+import IsiContent from '../component/isiContent';
 import {Row,Col,CardColumns,Card,Badge,Image,Button,Container} from 'react-bootstrap';
 
 

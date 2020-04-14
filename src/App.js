@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Home from './page/home'; 
 import HomeUser from './page/homeUser'; 
-// import Detail1 from './page/content1';
+import Detail1 from './page/content1';
 // import Detail2 from './content2';
 // import Detail3 from './content3';
 // import Detail4 from './content4';
@@ -30,7 +30,7 @@ render(){
       <div>
         <Link to="/"></Link>       
         <Link to="/user"></Link> 
-        {/* <Link to="/content1"></Link>        */}
+        <Link to="/content1"></Link>       
         {/* <Link to="/content2"></Link>       
         <Link to="/content3"></Link>       
         <Link to="/content4"></Link>       
@@ -45,9 +45,9 @@ render(){
         {/* <Link to="/profile/owner"></Link>       
         <Link to="/add/property"></Link>   */}    
         <Switch>
-        {/* <Route path="/content1"><Detail1/>
+        <Route path="/content1"><Detail1/> 
           </Route> 
-          <Route path="/content2"><Detail2/>
+          {/* <Route path="/content2"><Detail2/>
           </Route>
           <Route path="/content3"><Detail3/>
           </Route>
@@ -56,7 +56,7 @@ render(){
           <Route path="/content5"><Detail5/>
           </Route>
           <Route path="/content6"><Detail6/>
-          </Route> */} 
+          </Route>  */}
 
           {/* <Route path="/history/owner"><HistoryOwner/>
           </Route>

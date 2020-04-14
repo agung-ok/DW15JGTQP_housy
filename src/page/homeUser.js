@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import Header from './component/headerUser';
-import Content from './component/content';
+import Header from '../component/headerUser';
+import Content from '../component/content';
 
 
 
