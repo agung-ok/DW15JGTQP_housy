@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Row,Col} from 'react-bootstrap';
-import IsiContent from '../page/isiContent';
-import Filter from '../page/filter';
+import IsiContent from '../component/isiContent';
+import Filter from '../component/filter';
 
 class content extends Component{
     render() {

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import Header from './page/headerUser'
-import Content from './page/content';
+import Header from './component/headerUser';
+import Content from './component/content';
 
 
 

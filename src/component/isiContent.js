@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import '../App.css'
-import {Image,Card,Button,CardColumns,Badge} from 'react-bootstrap';
+import {Image,Card,Button,CardColumns,Badge,Container,Table,Row,Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 
 
@@ -59,35 +59,55 @@ class isiContent extends Component{
         const Tag = this.state.tag
         const Address = this.state.address
         return (
-            <div>                   
-                    <CardColumns>                       
-
+            <div>
+                <Row>
                         {this.state.content.map((c,i)=>{
-                        return(
+                        return( 
                             <div key={i}>
                                 <Link to={c.url}>
-                                <Button variant="">
+                                <Col md={{ span: 2, offset: 2 }}>                                  
+                                    
+                                    <Table> 
                                     <Card>
-                                        <Badge variant="light">{Tag}</Badge>
-                                        <Image variant="top" src={c.image} style={{width: "290px",height: "160px"}}></Image>
-                                            <p className="fBudget">
-                                                {c.budget}
-                                            </p>
 
-                                            <p className="fFacility">
-                                                {c.facility}
-                                            </p>
-
-                                            <p className="text-muted fAddress"> {Address}
-                                            </p>
+                                        <Row>
+                                            <Col>
+                                                <Badge variant="light">{Tag}</Badge>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <Image variant="top" src={c.image} style={{width: "290px",height: "160px"}}></Image>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <p className="fBudget">
+                                                    {c.budget}
+                                                </p>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <p className="fFacility">
+                                                    {c.facility}
+                                                </p>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <p className="text-muted fAddress"> {Address}
+                                                </p>
+                                            </Col>
+                                        </Row>
                                         </Card>
-                                    </Button>
-                                    </Link>
-                                <br/>
+                                    </Table>
+                                </Col> 
+                             </Link>
                             </div>
                             )
                         })}
-                    </CardColumns>
+                </Row>
             </div>
         );
     }

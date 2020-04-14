@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import Content from './content';
 import {Navbar,Form,FormControl,Image,Button,NavDropdown,Nav,FormGroup} from 'react-bootstrap';
 import Icon from '../image/icon.png';
 import {Link} from 'react-router-dom'
@@ -29,9 +28,9 @@ class headerOwner extends Component{
 
                     } 
                 >
-                        <NavDropdown.Item ><Link to="/profileOwner">Profile</Link></NavDropdown.Item>
-                        <NavDropdown.Item ><Link to="/addProperty">Add Propert</Link></NavDropdown.Item>
-                        <NavDropdown.Item ><Link to="/historyOwner">History</Link></NavDropdown.Item>
+                        <NavDropdown.Item ><Link to="/profile/owner">Profile</Link></NavDropdown.Item>
+                        <NavDropdown.Item ><Link to="/add/property">Add Propert</Link></NavDropdown.Item>
+                        <NavDropdown.Item ><Link to="/history/owner">History</Link></NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item><Link to="/">Log Out</Link></NavDropdown.Item>
                 </NavDropdown>

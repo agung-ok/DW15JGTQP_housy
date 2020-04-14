@@ -1,8 +1,7 @@
 import React,{Component} from 'react'
-import Icon from './image/icon.png'
-import './App.css'
+import '../App.css'
 import {Navbar,Image,Button,Form,FormControl,Container,Row,Col,Badge,Table  } from 'react-bootstrap';
-import Header from './page/headerOwner'
+import Header from '../component/headerOwner'
 
 class booking extends Component{
     render() {
